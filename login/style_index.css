@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+
+/* Configurações gerais */
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    font-family: "Jockey One", sans-serif;
+}
+
+body {
+    background-color: white;
+    font-family: "Jockey One", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: #474747;
+    border-bottom: solid 3px #FFE171;
+    width: 100%;
+}
+
+#logo_marca {
+    width: 6rem;
+    height: 5.5rem;
+    margin: 0.5rem 3rem 0 4.5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul, li {
+    list-style: none;
+}
+
+/* Seção de Cadastro */
+
+.cadastro {
+    margin: 23.4rem 10rem;
+}
+
+.cadastro > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c6c6c6;
+    height: 25rem;
+    width: 35rem;
+    border-radius: 1.5rem;
+}
+.cadastro > form > div {    
+    margin: 0.7rem 0;
+}
+
+.cadastro > form > div > h2 {    
+    color:#474747;
+    font-size: 1.4rem;
+    margin-left: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.cadastro > form > div > input {    
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1.4rem;
+    width: 30rem;
+    height: 4rem;
+    padding: 0.5rem;
+}
+
+.cadastro > form > div > button {    
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1.8rem;
+    width: 12rem;
+    height: 4rem;
+    padding: 0.5rem;
+    color: white;
+    background-color: #FFE171;
+}
+
+.cadastro > form > div > button:hover {    
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #c6c6c6;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+footer> div > p{
+    color: #474747;
+    margin: 2.5rem;
+}
