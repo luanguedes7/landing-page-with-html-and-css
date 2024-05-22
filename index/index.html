@@ -15,7 +15,7 @@
     <header>
         <nav class="cabeçalho">
             <ul>
-                <li><a href="index.html"><img id="logo_marca" src="/assets_site_struct/JWV_knVxTTy0HBGt8po2QAb.png" alt="Logo do Site"></a><li>
+                <li><a href="/index/index.html"><img id="logo_marca" src="/assets_site_struct/JWV_knVxTTy0HBGt8po2QAb.png" alt="Logo do Site"></a><li>
             </ul>
             <ul class="menu" id ="itens">
                 <li><a href="#destinos">DESTINOS</a></li>
@@ -98,6 +98,14 @@
             itens.style.display = "none";
         } else {
             itens.style.display = "block";
+        }
+    }
+
+    function largura() {
+        if(window.innerWidth <= 735) {
+            itens.style.display = "none"
+        } else {
+            itens.style.display = "flex"
         }
     }
 

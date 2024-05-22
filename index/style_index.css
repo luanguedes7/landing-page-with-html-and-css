@@ -94,6 +94,7 @@ a {
     margin: 1rem;
     border: none;
     color: white;
+    cursor: pointer;
  }
 
  .menu_toggle:hover, .menu_toggle > i.selected {
@@ -106,12 +107,26 @@ a {
         display: none;
     }
  }
- 
- @media(max-width:46rem) {
-    .login > li, .menu > li {
-        display: none;
+
+ @media (max-width:735px) {
+    .menu {
+        position: absolute;
+        text-align: center;
+        top:0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: fit-content;
+        margin: 7rem auto auto auto;
+        background-color: #474747;
+        border-bottom: solid #FFE171 1px;
+    }
+
+    .menu > li {
+        margin: 0.5rem 0;
     }
  }
+ 
  /* Seção Principal */
 
  .secao_principal {
@@ -176,6 +191,9 @@ a {
     margin-left: 0.5rem;
 }
 
+.secao_principal > div > form > div > button:hover {
+cursor: pointer;
+}
 @media(max-width:45rem) {
     .secao_principal > div > form > div > input {
         width: 40rem;
@@ -233,6 +251,7 @@ a {
 .cidades > div > p:hover {
     color: #FFE171;
     transition: 0.7s;
+    cursor: pointer;
 }
 
 #p_barcelona {
@@ -284,7 +303,8 @@ a {
 
 .secao_duvidas > div > div > button:hover {
     color: #FFE171;
-    transition: .5s;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 /* Footer */
