@@ -140,13 +140,13 @@ a {
     color: #FFE171;
  }
 
- /* Seção de Seleção */
+ /* Seção de Cadastro */
 
-.selecao_servicos {
+.lista_servicos {
     margin: 21.4rem 10rem;
 }
 
-.selecao_servicos {
+.lista_servicos > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,40 +157,49 @@ a {
     border-radius: 1.5rem;
 }
 
-.selecao_servicos > div > h2 {    
+.lista_servicos > div > div  {    
+  display: flex;
+  justify-content: space-between;
+  width: 87%;
+  margin-bottom: 1.3rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+#titulo_lista {
+    border: none;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color: #c6c6c6;
+}
+
+.lista_servicos > div > div > h2 {    
     color:#474747;
     font-size: 2rem;
     font-weight: 0.5rem;
 }
 
-.botões {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 90%;
-    padding: 1.5rem 0;
+.lista_servicos > div > div > p {    
+    padding: 0.7rem;
+    color: #474747;
 }
 
-.botões > button {    
-    border: none;
-    border-radius: 1.5rem;
-    font-size: 1.8rem;
-    width: 10rem;
-    height: 4rem;
-    color: #474747;
+.lista_servicos > div > div > button {    
     background-color: white;
+    border: none;
+    margin-right: 1rem;
 }
 
-.botões > button:hover {    
-    cursor: pointer;
-    color: #474747;
-    background-color: #FFE171;
-    transition: 1s;
+.lista_servicos > div > div > button> i:hover {    
+    color: #FFE171;
+    transition: 0.51s;
 }
 
 #botao_executar {
     justify-content: center;
     border: none;
+    background-color: #c6c6c6;
+    margin-top: 1.5rem;
 }
 
 #botao_executar > a {
