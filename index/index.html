@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets_site_struct/JWV_knVxTTy0HBGt8po2QAb.png" type="image/x-icon">
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <title>Walk with me</title>
+    <script src="https://kit.fontawesome.com/c7103c880e.js" crossorigin="anonymous"></script>
+</head>
+<body onresize="largura()">
+    <header>
+        <nav class="cabeçalho">
+            <ul>
+                <li><a href="index.html"><img id="logo_marca" src="/assets_site_struct/JWV_knVxTTy0HBGt8po2QAb.png" alt="Logo do Site"></a><li>
+            </ul>
+            <ul class="menu" id ="itens">
+                <li><a href="#destinos">DESTINOS</a></li>
+                <li><a href="#grupos">GRUPOS</a></li>
+                <li><a href="#serviços">SERVIÇOS</a></li>
+            </ul>
+            <ul class="login" id ="login_id">
+                <li id="cadastro"><a href="#cadastro">CADASTRE-SE</a></li>
+                <li id="entre"><a href="#entre">ENTRE</a></li>
+            </ul>
+            <button class="menu_toggle" onclick="clickMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <section class="secao_principal">
+        <div>
+            <h1>Encontre a excursão dos seus sonhos!</h1>
+            <p>Mais de 50 destinos diferentes pelo mundo!</p>
+            <form action="">
+                <div><input type="text" placeholder="Qual cidade você deseja conhecer?"></div>
+                <div><button type="button">Vamos</button></div>
+            </form>
+        </div>
+    </section>
+    <section class="secao_cidades">
+        <div>
+                <div><h2 class="titulo_secoes">Cidades em destaque</h2></div>
+                <div class="cidades">
+                    <div>
+                        <img src="/assets_site_struct/barcelona.webp" alt="Barcelona">
+                        <p id="p_barcelona">Barcelona</p>
+                    </div>
+                    <div >
+                        <img src="/assets_site_struct/paris.jpg" alt="Paris">
+                        <p id="p_paris">Paris</p>
+                    </div>
+                    <div>
+                        <img src="/assets_site_struct/londres.webp" alt="Londres">
+                        <p id="p_londres">Londres</p>
+                    </div>
+                    <div>
+                        <img src="/assets_site_struct/méxico.jpg" alt="México">
+                        <p id="p_méxico">Cidade do México</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secao_duvidas">
+        <div>
+            <div id="titulo_duvidas"><h2 class="titulo_secoes">Dúvidas Frequentes</h2></div>
+            <div><p>O que é "Walk with me"?</p><button><i class="fa-solid fa-angle-down"></i></button></div>
+            <div><p>Como funciona uma excursão com o "Walk with me"?</p><button><i class="fa-solid fa-angle-down"></i></button></button></div>
+            <div><p>Quanto custa uma excursão com o "Walk with me"?</p><button><i class="fa-solid fa-angle-down"></i></button></div>
+            <div><p>Quero ser um guia!</p><button><i class="fa-solid fa-angle-down"></i></button></div>
+        </div>
+    </section>
+    <footer>
+        <div class="empresa_footer">
+            <img src="/assets_site_struct/JWV_knVxTTy0HBGt8po2QAb.png" alt="Logo do Site" id = "logo_marca_footer">
+            <p>© Walk with me </p>
+        </div>
+        <div class="social_links_footer">
+            <div><h3>Social</h3></div>
+            <div class="social_links">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+
+    function clickMenu () {
+        if (itens.style.display == "block") {
+            itens.style.display = "none";
+        } else {
+            itens.style.display = "block";
+        }
+    }
+
+</script>
+
+</html>

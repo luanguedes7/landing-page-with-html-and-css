@@ -1,0 +1,340 @@
+@charset "UTF-8";
+
+/* Configurações gerais */
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    font-family: "Jockey One", sans-serif;
+}
+
+body {
+    background-color: white;
+    font-family: "Jockey One", sans-serif;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: #474747;
+    border-bottom: solid 3px #FFE171;
+}
+
+#logo_marca {
+    width: 6rem;
+    height: 5.5rem;
+    margin: 0.5rem 3rem 0 4.5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabeçalho > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    flex-grow: 10;
+}
+
+.menu > li {
+    margin: 0 3.4rem;
+}
+
+.cabeçalho > ul > li > a {
+    color: white;
+}
+
+.cabeçalho > ul > li > a:hover, .cabeçalho > ul > li > a.selected {
+    color: #FFE171;
+    transition: 0.6s all;
+}
+
+.login > li {
+    margin: 0 1rem 0 0;
+}
+
+.login > li > a {
+    padding: 0.7rem;
+    border-radius: 15px;
+}
+
+#cadastro > a {
+   color: white;
+   background-color: #FFE171;
+   border: 1px;
+}
+#cadastro > a:hover{
+    color: #FFE171;
+    background-color: #474747;
+    border: solid 1px;
+ }
+
+ .menu_toggle {
+    background-color: #474747;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    color: white;
+ }
+
+ .menu_toggle:hover, .menu_toggle > i.selected {
+    color: #FFE171;
+    transition: 1s;
+ }
+
+ @media(min-width:45rem) {
+    .menu_toggle{
+        display: none;
+    }
+ }
+ 
+ @media(max-width:46rem) {
+    .login > li, .menu > li {
+        display: none;
+    }
+ }
+ /* Seção Principal */
+
+ .secao_principal {
+    background-image: url("/assets_site_struct/fotoprincipal.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 80rem;
+ }
+
+.secao_principal > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.secao_principal > div > h1 {
+    margin-top: 37rem;
+    margin-bottom: 2rem;
+    font-size: 6.2rem;
+    font-weight: 300;
+    line-height: 6rem;
+    color: #FFE171;
+}
+
+.secao_principal > div > p {
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #FFE171;
+}
+
+.secao_principal > div > form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.secao_principal > div > form > div > input {
+    color: #474747;
+    border: none;
+    font-family: "Jockey One", sans-serif;
+    font-size: 2rem;
+    border-radius: 10rem;
+    width: 51.9rem;
+    min-width: 5rem;
+    margin-top: 1rem;
+    height: 4.6rem;
+    padding: 1rem;
+}
+
+.secao_principal > div > form > div > button {
+    color: white;
+    background-color: #FFE171;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10rem;
+    width: 10.6rem;
+    height: 4.6rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+@media(max-width:45rem) {
+    .secao_principal > div > form > div > input {
+        width: 40rem;
+        margin-top: 1rem;
+        height: 4.6rem;
+        padding: 1rem;
+    }
+    
+}
+
+/* Seção Cidades */
+
+.secao_cidades > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 8rem;
+}
+ 
+.titulo_secoes {
+    color: #474747;
+    font-size: 2.8rem;
+    font-weight: 0.5rem;
+    margin-top: 4rem;
+}
+
+.cidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cidades > div {
+    position: relative;
+    width: 27.8rem;
+    height: 21.8rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+
+}
+
+.cidades > div  > img {
+    width: 27.8rem;
+    height: 21.8rem;
+    border-radius: 2.5rem;
+}
+
+.cidades > div  > p {
+    position: absolute;
+    color: white;
+    font-size: 2.6rem;
+    top: 17rem;
+}
+
+.cidades > div > p:hover {
+    color: #FFE171;
+    transition: 0.7s;
+}
+
+#p_barcelona {
+    left: 16.5rem;
+}
+
+#p_paris {
+    left: 21.5rem;
+}
+
+#p_londres {
+    left: 18.5rem;
+}
+
+#p_méxico {
+    left: 10rem;
+}
+
+/* Seção Dúvidas */
+
+.secao_duvidas  > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.secao_duvidas  > div  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 350px;
+    border-radius: 1rem;
+    height: 3.5rem;
+    margin: 1rem 8rem 0 8rem;
+    padding: 1rem;
+    color: #474747;
+    background-color: #c6c6c6;
+}
+
+#titulo_duvidas {
+    padding-bottom: 4rem;
+    background-color: white;
+}
+
+.secao_duvidas > div > div > button {
+    color: #474747;
+    background-color: #c6c6c6;
+    border: none;
+}
+
+.secao_duvidas > div > div > button:hover {
+    color: #FFE171;
+    transition: .5s;
+}
+
+/* Footer */
+
+footer {
+    background-color: #c6c6c6;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.empresa_footer {
+    display: flex;
+    align-items: center;
+}
+
+#logo_marca_footer {
+    width: 6.5rem;
+    height: 5.5rem;
+    margin: 1.5rem 4rem 1.5rem 1.5rem;
+}
+
+.empresa_footer > p{
+    color: #474747;
+}
+
+.social_links_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social_links_footer >  div > h3 {
+  color: #474747;
+  font-size: 2rem;
+}
+
+.social_links {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.social_links > i {
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+    margin: 0.3rem;
+    color: #474747;
+}
+.social_links > i:hover {
+    color: #FFE171;
+    transition: 0.5s;
+}
