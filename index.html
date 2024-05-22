@@ -20,7 +20,7 @@
             <ul class="menu" id ="itens">
                 <li><a href="#destinos">DESTINOS</a></li>
                 <li><a href="#grupos">GRUPOS</a></li>
-                <li><a href="#serviços">SERVIÇOS</a></li>
+                <li><a href="cadastro/index.html">SERVIÇOS</a></li>
             </ul>
             <ul class="login" id ="login_id">
                 <li id="cadastro"><a href="/cadastro/index.html">CADASTRE-SE</a></li>
@@ -104,8 +104,10 @@
     function largura() {
         if(window.innerWidth <= 735) {
             itens.style.display = "none"
+            login_id.style.display = "none"
         } else {
             itens.style.display = "flex"
+            login_id.style.display = "flex"
         }
     }
 

@@ -84,18 +84,19 @@ ul, li {
     padding: 0.5rem;
 }
 
-.cadastro > form > div > button {    
+.cadastro > form > div > a {    
     border: none;
+    text-decoration: none;
     border-radius: 1.5rem;
     font-size: 1.8rem;
     width: 12rem;
     height: 4rem;
-    padding: 0.5rem;
+    padding: 0.7rem;
     color: white;
     background-color: #FFE171;
 }
 
-.cadastro > form > div > button:hover {    
+.cadastro > form > div > a:hover {    
     cursor: pointer;
 }
 

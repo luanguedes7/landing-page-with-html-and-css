@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+/* Configurações gerais */
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    font-family: "Jockey One", sans-serif;
+}
+
+body {
+    background-color: white;
+    font-family: "Jockey One", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: #474747;
+    border-bottom: solid 3px #FFE171;
+    width: 100%;
+}
+
+#logo_marca {
+    width: 6rem;
+    height: 5.5rem;
+    margin: 0.5rem 3rem 0 4.5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabeçalho > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    flex-grow: 10;
+}
+
+.menu > li {
+    margin: 0 3.4rem;
+}
+
+.cabeçalho > ul > li > a {
+    color: white;
+}
+
+.cabeçalho > ul > li > a:hover, .cabeçalho > ul > li > a.selected {
+    color: #FFE171;
+    transition: 0.6s all;
+}
+
+.sair > li {
+    margin: 0 1rem 0 0;
+}
+
+.sair > li > a {
+    padding: 0.7rem;
+    border-radius: 15px;
+}
+
+#sair > a {
+    color: #FFE171;
+    background-color: #474747;
+    border: solid 1px;
+    padding: 1rem 2rem;
+ }
+
+ #sair > a:hover {
+    color:white;
+    background-color: #FFE171;
+    border: none;
+    padding: 1rem 2rem;
+    transition: 1s;
+ }
+
+ .menu_toggle {
+    background-color: #474747;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+ }
+
+ .menu_toggle:hover, .menu_toggle > i.selected {
+    color: #FFE171;
+    transition: 1s;
+ }
+
+ @media(min-width:45rem) {
+    .menu_toggle{
+        display: none;
+    }
+ }
+
+ @media (max-width:735px) {
+    .menu {
+        position: absolute;
+        text-align: center;
+        top:0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: fit-content;
+        margin: 7rem auto auto auto;
+        background-color: #474747;
+        border-bottom: solid #FFE171 1px;
+    }
+
+    .menu > li {
+        margin: 0.5rem 0;
+    }
+ }
+
+ #servico_selecionado {
+    color: #FFE171;
+ }
+
+ /* Seção de Cadastro */
+
+.selecao_servicos {
+    margin: 21.4rem 10rem;
+}
+
+.selecao_servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c6c6c6;
+    height: 29rem;
+    width: 48rem;
+    border-radius: 1.5rem;
+}
+
+.selecao_servicos > div > h2 {    
+    color:#474747;
+    font-size: 2rem;
+    font-weight: 0.5rem;
+}
+
+.botões {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 1.5rem 0;
+}
+
+.botões > button {    
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1.8rem;
+    width: 10rem;
+    height: 4rem;
+    color: #474747;
+    background-color: white;
+}
+
+.botões > button:hover {    
+cursor: pointer;
+}
+
+#botao_executar {
+    justify-content: center;
+    border: none;
+}
+
+#botao_executar > a {
+    color: white;
+    background-color: #FFE171;
+    border-radius: 1.5rem;
+    padding-top: 0.7rem;
+    font-size: 1.8rem;
+    width: 10rem;
+    height: 4rem;
+    text-align: center;
+}
+
+#botao_executar > a:hover {
+    cursor: pointer;
+}
+
+ /* Footer */
+
+footer {
+    background-color: #c6c6c6;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+footer> div > p{
+    color: #474747;
+    margin: 2.5rem;
+}
