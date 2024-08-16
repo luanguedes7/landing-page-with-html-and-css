@@ -1,5 +1,5 @@
-## Struct-Website
-Static website created for Struct Trainee Process.
+## Landing Page
+Landing page to train html, css and javascript concepts.
 
 ### Technologies
 
