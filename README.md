@@ -46,13 +46,12 @@ Additionally, I made some screen mockups.
 
 ```bash
 # Clone repository
-git clone https://github.com/luanguedes7/Product-API-APIRestful.git
+git clone https://github.com/luanguedes7/landing-page-with-html-and-css.git
 
-# Enter the back-end project folder
-cd backend
+# Enter the project folder
+cd landing-page-with-html-and-css
 
-# Run the project
-./mvnw spring-boot:run
+# In Vscode, I recommend the GoLive extension.
 ```
 
 # Author
